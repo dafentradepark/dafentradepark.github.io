@@ -30,7 +30,7 @@ img{
     overflow: hidden;
 }
 .section-container{
-    text-align:left; 
+    text-align:left;
     padding-left:30px;
     height: 100%;
     width: 220px;
@@ -44,8 +44,8 @@ img{
     font-weight: 600;
     letter-spacing: 2px;
     margin: 0;
-    font-size:20px; 
-    width:260px; 
+    font-size:20px;
+    width:260px;
     display: inline-block;
     text-transform: uppercase;
     padding-top: 22px;
@@ -54,7 +54,7 @@ img{
     background-size: cover !important;
     background-position: center;
     background-repeat: no-repeat;
-    width:100%; 
+    width:100%;
     height: 400px; 
 }
 
@@ -189,7 +189,7 @@ a.bx-next:hover{
     position: relative;
     z-index: 99;
     cursor: pointer;
-    cursor: -webkit-zoom-in; 
+    cursor: -webkit-zoom-in;
     cursor: -moz-zoom-in;
     -webkit-transition: all 300ms;
     -moz-transition: all 300ms;
@@ -199,7 +199,7 @@ a.bx-next:hover{
 }
 .zoom.in{
     cursor: pointer;
-    cursor: -webkit-zoom-out; 
+    cursor: -webkit-zoom-out;
     cursor: -moz-zoom-out;
     -webkit-transform: scale(1.4);
     -moz-transform: scale(1.4);
@@ -248,7 +248,7 @@ a.bx-next:hover{
 }
 @media (max-width: 730px) {
     .section-container{
-        display: none; 
+        display: none;
     }
     .article-title{
         font-size: 12px;

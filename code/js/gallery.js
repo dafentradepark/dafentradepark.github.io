@@ -1,14 +1,14 @@
 // js to active and automatically resize the gallery slideshow
 
 $(document).ready(function(){
-    if (window.innerWidth >= 600) {    
+    if (window.innerWidth >= 600) {
         resizeGallery();
         placeGalleryText();
     }
 });
 
 $(window).resize(function(){
-    if (window.innerWidth >= 600) {    
+    if (window.innerWidth >= 600) {
         resizeGallery();
         placeGalleryText();
     }
@@ -53,7 +53,7 @@ function placeGalleryText() {
     var winH = window.innerHeight;
     var winW = window.innerWidth;
     var textLocation;
-    if (winW <= 500) {   
+    if (winW <= 500) {
         textLocation = winH - 400;
         $('.gallery-text').css('top', textLocation + 'px');
         $('.next-image').removeClass('margin-left');
@@ -64,7 +64,7 @@ function placeGalleryText() {
     }
 }
 
-// move gallery text on scroll 
+// move gallery text on scroll
 $(function() {
     $(window).scroll(function(){
         parallaxImg();
@@ -79,4 +79,3 @@ function parallaxImg(){
     $('.gallery-text').css('transform', 'translate3d(0px, ' + scrolled / 20 + 'px, 0px)');
     $('.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto').css('transform', 'translate3d(0px, ' + scrolled / 20 + 'px, 0px)');
 }
-

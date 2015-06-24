@@ -71,7 +71,7 @@ li{
     height: 600px;
     background: #252525;
     background-size: cover !important;
-    background-repeat: no-repeat !important;    
+    background-repeat: no-repeat !important;
 }
 .container{
     position: relative;
@@ -97,7 +97,7 @@ li{
     font-family: 'montserrat', sans-serif;
     font-size: 46px;
     text-transform: uppercase;
-    letter-spacing:2px;
+    letter-spacing:2.4px;
     margin: 0;
 }
 
@@ -107,7 +107,7 @@ li{
     margin: 0 auto;
     color: #ffffff;
     font-family: 'merriweather', serif;
-    font-size: 18px;
+    font-size: 15px;
     font-style: italic;
     font-weight: 300;
 }
@@ -208,7 +208,7 @@ li{
 .left-column{
     max-width: 390px;
     display: inline-block;
-} 
+}
 .right-column{
     max-width: 390px;
     display: inline-block;
@@ -375,5 +375,3 @@ li{
         display: none;
     }
 }
-
-
