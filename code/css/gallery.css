@@ -1,0 +1,274 @@
+/* ----------------------------------
+Project: Dafen Tade Park
+Author: Taylor Rees for Merged Design
+Date: August 2014
+---------------------------------- */
+html{
+    height: 100%;
+}
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+ul{
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    margin: 0;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.page-wrapper{
+    overflow: hidden;
+}
+.section-container{
+    text-align:left; 
+    padding-left:30px;
+    height: 100%;
+    width: 220px;
+    min-width: 220px;
+    display: inline-block;
+    float: left;
+}
+.section-title{
+    color: #d9ad44;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin: 0;
+    font-size:20px; 
+    width:260px; 
+    display: inline-block;
+    text-transform: uppercase;
+    padding-top: 22px;
+}
+.gallery-image{
+    background-size: cover !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    width:100%; 
+    height: 400px; 
+}
+
+/* Slideshow Controls */
+
+.bx-wrapper .bx-controls-direction a {
+    display: none;
+}
+.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto{
+    padding-bottom: 16px;
+    text-align: left;
+    padding-left: 15%;
+}
+
+/* Gallery Area */
+.gallery-text{
+    position: absolute;
+    top: 160px;
+    z-index: 999;
+    padding-left: 15%;
+    padding-right: 4px;
+    max-width: 650px;
+}
+.article-title{
+    font-family: 'merriweather', serif;
+    color: #fff;
+    z-index: 999;
+}
+.button-holder{
+    padding-top: 20px;
+}
+.gallery-button{
+    font-family: 'merriweather', serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    border: 2px solid #fff;
+    width: 200px;
+    height: 30px;
+    border-radius: 25px;
+    text-align: center;
+    padding-top: 14px;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+}
+.gallery-button:hover{
+    background:#fff;
+    border: 2px solid #fff;
+    color: #252525;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+.bx-next{
+    font-family: 'merriweather', serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    border: 2px solid #fff;
+    width: 200px;
+    height: 30px;
+    border-radius: 25px;
+    text-align: center;
+    padding-top: 14px;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+}
+a.bx-next:hover{
+   background:#fff;
+    border: 2px solid #fff;
+    color: #252525;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+.margin-left{
+    margin-left: 6px;
+    display: inline-block;
+}
+/* Text Area */
+.article-wrapper{
+    padding-top: 50px;
+    padding-bottom: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.max-width-container{
+    margin: 0 auto;
+    max-width: 700px;
+}
+.article-text{
+    z-index: 0;
+    font-family: 'merriweather', serif;
+    color: #696f6f;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 24px;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -ms-transition: all 300ms;
+    -o-transition: all 300ms;
+    transition: all 300ms;
+}
+.article-button{
+    margin-top: 25px;
+    color: #fff;
+    background: #252525;
+    border: 1px solid #252525;
+}
+.article-button:hover{
+    color: #fff;
+    background:#d9ad44;
+    border: 1px solid #d9ad44;
+}
+.m-left{
+    margin-left: 5px;
+}
+
+/* img zoom */
+
+.image-wrap{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.zoom{
+    position: relative;
+    z-index: 99;
+    cursor: pointer;
+    cursor: -webkit-zoom-in; 
+    cursor: -moz-zoom-in;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -ms-transition: all 300ms;
+    -o-transition: all 300ms;
+    transition: all 300ms;
+}
+.zoom.in{
+    cursor: pointer;
+    cursor: -webkit-zoom-out; 
+    cursor: -moz-zoom-out;
+    -webkit-transform: scale(1.4);
+    -moz-transform: scale(1.4);
+    -ms-transform:scale(1.4);
+    -o-transform: scale(1.4);
+    transform: scale(1.4);
+    background: #fff;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -ms-transition: all 300ms;
+    -o-transition: all 300ms;
+    transition: all 300ms;
+}
+.article-text.on-zoom{
+    opacity: 0.3;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -ms-transition: all 300ms;
+    -o-transition: all 300ms;
+    transition: all 300ms;
+}
+
+/* Footer Section */
+
+.footer-bar{
+    height: 70px;
+    background: #fff;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-top: 1px solid #ccc;
+}
+.back-to-top{
+    color:#d9ad44;
+}
+.back-to-top:hover{
+    color: #aaa;
+}
+
+/* Slideshows */
+
+@media (max-width: 860px) {
+    .bx-wrapper .bx-controls-direction a {
+        display: none;
+    }
+}
+@media (max-width: 730px) {
+    .section-container{
+        display: none; 
+    }
+    .article-title{
+        font-size: 12px;
+    }
+    .gallery-button{
+        display: none;
+    }
+    .article-wrapper{
+        padding-top: 30px;
+    }
+    .article-text{
+        font-size: 16px;
+    }
+}
+@media (max-width: 600px) {
+    .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto{
+        display: none;
+    }
+    .gallery-text{
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+}

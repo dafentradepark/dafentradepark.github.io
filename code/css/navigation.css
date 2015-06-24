@@ -1,0 +1,193 @@
+/* Navigation by Taylor Rees */
+
+#content-wrapper{
+    position: relative;
+    left: 0px;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+#content-wrapper.show-nav{
+    left: -300px;
+    -webkit-transition: all 200ms;
+    -moz-transition: all 200ms;
+    -ms-transition: all 200ms;
+    -o-transition: all 200ms;
+    transition: all 200ms;
+}
+
+/* Navigation */
+.nav{
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    height: 70px;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+.nav.show-nav{
+    left: -300px;
+   -webkit-transition: all 200ms;
+    -moz-transition: all 200ms;
+    -ms-transition: all 200ms;
+    -o-transition: all 200ms;
+    transition: all 200ms;
+}
+.nav-container{
+    height: 100%;
+    margin: 0 auto;
+    text-align: right;
+    padding-right: 80px;
+}
+.logo-container{
+    height: 100%;
+    width: 350px;
+    min-width: 264px;
+    display: inline-block;
+    float: left;
+    text-align: center;
+    border-right: 1px solid #ccc;
+}
+.logo{
+    color: #d9ad44;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin: 0;
+    font-size:20px; 
+    width:260px; 
+    display: inline-block;
+    text-transform: uppercase;
+    padding-top: 22px;
+}
+.nav-el{
+    text-transform: uppercase;
+    height: 20px;
+    text-align: center;
+    display: inline-block;
+    color: #bbb;
+    font-family: 'montserrat', sans-serif;
+    text-decoration: none;
+    padding: 5px 5px;
+    margin: 20px 0px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.nav-el:hover{
+    color: #d9ad44;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+/* Responsive Nav */    
+#secondary-nav{
+    text-align: left;
+    position: fixed;
+    top: 0;
+    right: -301px;
+    height: 100%;
+    width: 300px;
+    background: #fff;
+    display: block;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    z-index: 999;
+    -webkit-transition: all 200ms;
+    -moz-transition: all 200ms;
+    -ms-transition: all 200ms;
+    -o-transition: all 200ms;
+    transition: all 200ms;
+}
+#secondary-nav.show-nav{
+    right: 0px;
+}
+.secondary-nav-el li{
+    display: block;
+    border-bottom: 1px solid #ccc;
+    padding-left: 40px;
+}
+
+.menu-button{
+    cursor: pointer;
+    position: relative;
+    right: 0px;
+    color: #bbb;
+    font-size: 16px;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+.menu-button:hover{
+    color:#d9ad44;
+}
+#menu-button.show-nav{
+    right: 300px;
+    color:#d9ad44;
+    -webkit-transition: all 200ms;
+    -moz-transition: all 200ms;
+    -ms-transition: all 200ms;
+    -o-transition: all 200ms;
+    transition: all 200ms;
+}
+.menu-text{
+    text-transform: uppercase;
+    height: 20px;
+    text-align: center;
+    display: inline-block;
+    font-family: 'montserrat', sans-serif;
+    text-decoration: none;
+    padding: 5px 5px;
+    margin: 20px 0px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.menu-icon{
+    margin-left:-3px;
+}
+
+@media (max-width: 1000px) {
+    .nav-container{
+        padding-right: 50px;
+    }
+}
+@media (max-width: 700px) {
+    .nav-container{
+        padding-right: 20px;
+    }
+}
+@media (max-width: 500px) {
+    .logo{
+        font-size: 16px;
+        width: 160px;
+        padding-top: 17px;
+    }
+    .logo-container{
+        text-align: left;
+        padding-left: 14px;
+        width: 160px;
+        min-width: 160px;
+        border-right: none;
+    }
+}
+
+
+
+
+
+
+
+
+

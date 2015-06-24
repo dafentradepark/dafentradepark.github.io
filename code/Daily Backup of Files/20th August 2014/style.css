@@ -1,0 +1,333 @@
+/* ----------------------------------
+Project: Dafen Tade Park
+Author: Taylor Rees for Merged Design
+Date: August 2014
+---------------------------------- */
+
+/* General Styling */
+
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.max-width-container{
+    max-width: 800px;
+    margin: 0 auto;
+}
+li{
+    display: inline-block;
+}
+
+/* Buttons */
+
+.article-button{
+    font-family: 'merriweather', serif;
+    font-size: 14px;
+    color: #fff;
+    background: #252525;
+    width: 200px;
+    height: 30px;
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 14px;
+    text-decoration: none;
+}
+.article-button:hover{
+    background:#d9ad44;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+.button-padding{
+    padding-top: 20px;
+}
+
+/* Navigation */
+
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+}
+.nav-container{
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.logo-container{
+    height: 100%;
+    width: 350px;
+    min-width: 264px;
+    display: inline-block;
+    float: left;
+    text-align: center;
+    border-right: 1px solid #ccc;
+}
+.logo{
+    color: #d9ad44;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin: 0;
+    font-size:20px; 
+    width:260px; 
+    display: inline-block;
+    text-transform: uppercase;
+    padding-top: 22px;
+}
+.nav-el-container{
+    display: inline-block;
+    margin: 0 auto;
+    padding-top: 1px;
+    padding-left: 0px;
+}
+.nav-el{
+    text-transform: uppercase;
+    height: 20px;
+    text-align: center;
+    display: inline-block;
+    color: #bbb;
+    font-family: 'montserrat', sans-serif;
+    text-decoration: none;
+    padding: 5px 5px;
+    margin: 20px 0px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.nav-el:hover{
+    color: #d9ad44;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+.separator{
+    padding:0px;
+}
+.separator:hover{
+    color: #ccc;
+}
+
+/* --- sections --- */
+
+/* Full Width Image Section */
+
+.header-image{
+    padding-top: 70px;
+}
+.full-width-image{
+    width: 100%;
+    height: 650px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.header-intro-container{
+    padding-top: 380px;
+}
+.intro-container{
+    padding-top: 280px;
+}
+
+.section-title{
+    color: #ffffff;
+    font-family: 'montserrat', sans-serif;
+    font-size: 46px;
+    text-transform: uppercase;
+    letter-spacing:2px;
+    margin: 0;
+}
+
+.section-subtitle{
+    color: #ffffff;
+    font-family: 'merriweather', serif;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 300;
+}
+
+/* Text Bullets Section */
+
+.text-bullets-1 {
+    height: 703px;
+    border-bottom: 1px solid #cccccc;
+    background: #fff;
+    z-index: 20;
+}
+.bullet-grid{
+    display: inline-block;
+    float: left;
+    width: 220px;
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+}
+.bullet-grid-el{
+    height: 145px;
+    padding-top: 30px;
+    padding-left: 30px;
+    border-bottom: 1px solid #cccccc;
+}
+.text-bullet-number{
+    color: #d9ad44;
+    font-family: 'montserrat', sans-serif;
+    font-size: 36px;
+    letter-spacing: 2px;
+    margin: 0;
+    margin-bottom: 8px;
+}
+.text-bullet-title{
+    font-family: 'merriweather', serif;
+    font-size: 20px;
+    color: #252525;
+    margin: 0;
+    margin-bottom: 4px;
+}
+.text-bullet-info{
+    font-family: 'merriweather', serif;
+    font-size: 14px;
+    color: #bbb;
+    font-style: italic;
+    font-weight: 300;
+    margin: 0;
+}
+.float-right-container{
+    float: right;
+    max-width: 500px;
+    padding-left: 30px;
+    padding-top: 50px;
+}
+
+/* Text with Accompanying Image */
+
+.text-image{
+    height: 500px;
+    overflow: hidden;
+    border-bottom: 1px solid #cccccc;
+}
+.article-title{
+    font-family: 'merriweather', serif;
+    color: #252525;
+    font-size: 22px;
+    font-weight: 400;
+}
+.article-text{
+    font-family: 'merriweather', serif;
+    color: #7d7d7d;
+    font-size: 16px;
+}
+.float-left-container{
+    padding-top: 70px;
+    padding-bottom: 80px;
+    max-width: 500px;
+}
+.image-float-right{
+    float: right;
+    margin-right: -40px;
+}
+.button-pad-img{
+    width: 360px;
+}
+
+/* Circular Arrow (on full width images) */
+
+/*
+.white-circle{
+    height: 11px;
+    width: 11px;
+    background: #ffffff;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 82px;
+}
+.vertical-line{
+    margin-top: 0px;
+    height: 200px;
+    width: 50%;
+    border-right: 1px solid #ffffff;
+}
+*/
+
+/* Dual Column Text Section */
+
+.dual-column-text{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #cccccc;
+}
+.left-column{
+    max-width: 390px;
+    display: inline-block;
+    padding-right:
+    float: left;
+} 
+.right-column{
+    max-width: 390px;
+    display: inline-block;
+    float: right;
+}
+
+/* Text Bullets 2 Section */
+
+.reduce-pad{
+    padding-top: 15px;
+}
+.add-pad{
+    padding-bottom: 15px;
+}
+.text-bullets-2 {
+    background: #fff;
+    height: 382px;
+}
+
+/* Footer Section */
+
+.full-width-footer{
+    margin-top: -4px;
+    width: 100%;
+    height: 420px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-image: url('Images/Site-Under-Construction-Image.jpg'); 
+    overflow-y:hidden;
+    z-index: 20;
+}
+.footer-container{
+    padding-top: 160px;
+}
+
+/* Responsive Code */
+
+@media (max-width: 1280px) {
+    .nav-el{
+        font-size: 12px;
+        letter-spacing: 0.5px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .logo-container{
+        border-right: none;
+    }
+    .separator{
+        display: none;
+    }
+    .nav-container{
+        text-align: right;
+        padding-right: 30px;
+    }
+}
+
+
