@@ -187,12 +187,154 @@
 
           <div class="dual-pane-container">
             <div class="width-50">
-              <div class="gallery-preview-container">
-                <div class="image float-right" style="background: url('images/gallery/dafen-park-indoors-14.jpg')"></div>
+              <div class="gallery-container">
+                <div id="before-gallery" class="image float-right" style="background: url('images/gallery/dafen-park-indoors-14.jpg')">
+                  <div class="controls">
+                    <span data-action="prev-image" class="right width-50 no-selection"></span>
+                    <span data-action="next-image" class="left width-50 no-selection"></span>
+                    <span data-display="image-count" class="count no-selection">1</span>
+                  </div>
+                </div>
+                <div id="before-preloader" class="image float-right hidden"></div>
               </div>
             </div>
+
             <div class="width-50">
-              <div class="gallery-preview-container">
+              <div class="gallery-container">
+                <div id="after-gallery" class="image float-left" style="background: url('images/gallery/outdoors/dafen-park-outdoors-11.jpg')">
+                  <div class="controls">
+                    <span data-action="prev-image" class="right width-50 no-selection"></span>
+                    <span data-action="next-image" class="left width-50 no-selection"></span>
+                    <span data-display="image-count" class="count no-selection">1</span>
+                  </div>
+                </div>
+                <div id="after-preloader" class="image float-right hidden"></div>
+              </div>
+            </div>
+
+              <script type="text/javascript">
+
+                // A function that defines the gallery carousel functions.
+                // To invoke the function pass an array of images, the gallery
+                // container and the preloader container.
+
+                // The first child of the gallery must be 'controls'
+                // The 'controls' child must then have 3 children:
+                // 1. prev image
+                // 2. next image
+                // 3. image counter
+
+                function carousel(images, gallery, preloader) {
+
+                  var count = 0;
+                  preloader.style.background = "url('" + images[count + 1] + "')";
+
+                  // When the next image data action is called the
+                  // next image will be loaded into placed and the
+                  // (hidden) preloader will load the image next in sequence.
+
+                  function nextImage(next) {
+                    next.onclick = function() {
+                      if (count != images.length - 1) {
+                        count = count + 1;
+                      } else {
+                        count = 0;
+                      }
+                      gallery.style.background = "url('" + images[count] + "')";
+                      if (count != images.length - 1) {
+                        preloader.style.background = "url('" + images[count + 1] + "')";
+                      } else {
+                        preloader.style.background = "url('" + images[count - 1] + "')";
+                      }
+                      imageCount();
+                    }
+                  }
+
+                  nextImage(gallery.children[0].children[1]);
+                  nextImage(gallery.children[0].children[2]);
+
+                  // When the previous image data action is called the
+                  // previous image will be loaded into placed and the
+                  // (hidden) preloader will load the previous image in sequence.
+
+                  function prevImage(previous) {
+                    previous.onclick = function() {
+                      if (count != 0) {
+                        count = count - 1;
+                      } else {
+                        count = images.length - 1;
+                      }
+                      gallery.style.background = "url('" + images[count] + "')";
+                      if (count != 0) {
+                        preloader.style.background = "url('" + images[count - 1] + "')";
+                      } else {
+                        preloader.style.background = "url('" + images[count + 1] + "')";
+                      }
+                      imageCount();
+                    }
+                  }
+
+                  prevImage(gallery.children[0].children[0]);
+
+                  // When the image in the gallery is changed the image
+                  // counter will be appropriately updated.
+                  function imageCount() {
+                    var counter = gallery.children[0].children[2];
+                    counter.innerHTML = (count + 1) + '/' + images.length;
+                  }
+                  imageCount();
+                }
+
+                // Give the indoor gallery function
+                var beforeGallery = document.getElementById('before-gallery');
+                var beforePreloader = document.getElementById('before-preloader');
+                var beforeImages = [
+                  "images/gallery/indoors/dafen-park-indoors-14.jpg",
+                  "images/gallery/indoors/dafen-park-indoors-13.jpg",
+                  "images/gallery/indoors/dafen-park-indoors-11.jpg",
+                  "images/gallery/indoors/dafen-park-indoors-10.jpg",
+                  "images/gallery/indoors/dafen-park-indoors-09.jpg",
+                  "images/gallery/indoors/dafen-park-indoors-08.jpg",
+                  "images/gallery/indoors/dafen-park-indoors-07.jpg",
+                  "images/gallery/indoors/dafen-park-indoors-06.jpg"]
+
+                carousel(beforeImages, beforeGallery, beforePreloader);
+
+                // Give the outdoor gallery function
+                var afterGallery = document.getElementById('after-gallery');
+                var afterPreloader = document.getElementById('after-preloader');
+                var afterImages = [
+                  "images/gallery/outdoors/dafen-park-outdoors-11.jpg",
+                  "images/gallery/outdoors/dafen-park-outdoors-08.jpg",
+                  "images/gallery/outdoors/dafen-park-outdoors-01.jpg",
+                  "images/gallery/outdoors/dafen-park-outdoors-02.jpg",
+                  "images/gallery/outdoors/dafen-park-outdoors-03.jpg",
+                  "images/gallery/outdoors/dafen-park-outdoors-04.jpg",
+                  "images/gallery/outdoors/dafen-park-outdoors-05.jpg",
+                  "images/gallery/outdoors/dafen-park-outdoors-06.jpg",
+                  "images/gallery/outdoors/dafen-park-outdoors-10.jpg",
+                  "images/gallery/outdoors/dafen-park-outdoors-12.jpg",
+                  "images/gallery/outdoors/dafen-park-outdoors-13.jpg",
+                  "images/gallery/outdoors/dafen-park-outdoors-14.jpg",
+                  "images/gallery/outdoors/dafen-park-outdoors-15.jpg",
+                  "images/gallery/outdoors/dafen-park-outdoors-16.jpg",
+                  "images/gallery/outdoors/dafen-park-outdoors-17.jpg",
+                  "images/gallery/outdoors/dafen-park-outdoors-18.jpg",
+                  "images/gallery/outdoors/dafen-park-outdoors-19.jpg",
+                  "images/gallery/outdoors/dafen-park-outdoors-20.jpg",
+                  "images/gallery/outdoors/dafen-park-outdoors-21.jpg",
+                  "images/gallery/outdoors/dafen-park-outdoors-22.jpg",
+                  "images/gallery/outdoors/dafen-park-outdoors-23.jpg",
+                  "images/gallery/outdoors/dafen-park-outdoors-24.jpg",
+                  "images/gallery/outdoors/dafen-park-outdoors-25.jpg",
+                  "images/gallery/outdoors/dafen-park-outdoors-26.jpg"]
+
+                carousel(afterImages, afterGallery, afterPreloader);
+
+              </script>
+
+            <div class="width-50">
+              <div class="gallery-container">
                 <div class="image float-left" style="background: url('images/gallery/dafen-park-outdoors-08.jpg')"></div>
               </div>
             </div>
@@ -216,93 +358,93 @@
 
           <div class="image-grid-container width-100 margin-top-100">
             <div class="width-25">
-              <a class="image" style="background: url('images/team/DSC04964.jpg')"></a>
+              <a class="image" style="background: url('images/team/rob.jpg')"></a>
               <span>
                 <h3>Robert Rees</h3>
                 <figcaption>Site Director</figcaption>
               </span>
             </div>
             <div class="width-25">
-              <a class="image" style="background: url('images/team/DSC04965.jpg')"></a>
+              <a class="image" style="background: url('images/team/morton.jpg')"></a>
               <span>
-                <h3>Marik Surname</h3>
-                <figcaption>Painter</figcaption>
+                <h3>Morton Rees</h3>
+                <figcaption>Site Manager</figcaption>
               </span>
             </div>
             <div class="width-25">
-              <a class="image" style="background: url('images/team/DSC04969.jpg')"></a>
+              <a class="image" style="background: url('images/team/phil.jpg')"></a>
               <span>
-                <h3>Firstname Surname</h3>
-                <figcaption>Site Role</figcaption>
+                <h3>Phil Beynon</h3>
+                <figcaption>Contractor</figcaption>
               </span>
             </div>
             <div class="width-25">
-              <a class="image" style="background: url('images/team/DSC04972.jpg')"></a>
+              <a class="image" style="background: url('images/team/josh.jpg')"></a>
               <span>
-                <h3>Firstname Surname</h3>
-                <figcaption>Site Role</figcaption>
+                <h3>Joshua Thomas</h3>
+                <figcaption>Carpentry</figcaption>
               </span>
             </div>
           </div>
 
           <div class="image-grid-container width-100">
             <div class="width-25">
-              <a class="image" style="background: url('images/team/DSC04964.jpg')"></a>
+              <a class="image" style="background: url('images/team/dafs.jpg')"></a>
               <span>
-                <h3>Robert Rees</h3>
-                <figcaption>Site Director</figcaption>
+                <h3>Dafydd Lewis</h3>
+                <figcaption>Carpentry</figcaption>
               </span>
             </div>
             <div class="width-25">
-              <a class="image" style="background: url('images/team/DSC04965.jpg')"></a>
+              <a class="image" style="background: url('images/team/marek.jpg')"></a>
               <span>
-                <h3>Marik Surname</h3>
-                <figcaption>Painter</figcaption>
+                <h3>Marek Ciecwierski</h3>
+                <figcaption>Carpentry</figcaption>
               </span>
             </div>
             <div class="width-25">
-              <a class="image" style="background: url('images/team/DSC04969.jpg')"></a>
+              <a class="image" style="background: url('images/team/kev.jpg')"></a>
+              <span>
+                <h3>Kevin Pearce</h3>
+                <figcaption>Electricals</figcaption>
+              </span>
+            </div>
+            <div class="width-25">
+              <a class="image" style="background: url('images/team/DSC04986.jpg')"></a>
               <span>
                 <h3>Firstname Surname</h3>
-                <figcaption>Site Role</figcaption>
-              </span>
-            </div>
-            <div class="width-25">
-              <a class="image" style="background: url('images/team/DSC04972.jpg')"></a>
-              <span>
-                <h3>Firstname Surname</h3>
-                <figcaption>Site Role</figcaption>
+                <figcaption>Electricals</figcaption>
               </span>
             </div>
           </div>
 
           <div class="image-grid-container width-100">
             <div class="width-25">
-              <a class="image" style="background: url('images/team/DSC04964.jpg')"></a>
+              <a class="image" style="background: url('images/team/jeff.jpg')"></a>
               <span>
-                <h3>Robert Rees</h3>
-                <figcaption>Site Director</figcaption>
+                <h3>Jeffrey Evans</h3>
+                <figcaption>Painting</figcaption>
               </span>
             </div>
             <div class="width-25">
-              <a class="image" style="background: url('images/team/DSC04965.jpg')"></a>
+              <a class="image" style="background: url('images/team/miles.jpg')"></a>
               <span>
-                <h3>Marik Surname</h3>
-                <figcaption>Painter</figcaption>
+                <h3>Miles Surname</h3>
+                <figcaption>Groundworks</figcaption>
               </span>
             </div>
             <div class="width-25">
-              <a class="image" style="background: url('images/team/DSC04969.jpg')"></a>
+              <a class="image" style="background: url('images/team/DSC04978.jpg')"></a>
               <span>
                 <h3>Firstname Surname</h3>
-                <figcaption>Site Role</figcaption>
+                <figcaption>Groundworks</figcaption>
               </span>
             </div>
             <div class="width-25">
-              <a class="image" style="background: url('images/team/DSC04972.jpg')"></a>
+              <a class="image" style="background: url('images/team/cuba.jpg')"></a>
               <span>
-                <h3>Firstname Surname</h3>
-                <figcaption>Site Role</figcaption>
+                <h3>Jakub Wroblewicz</h3>
+                <figcaption>Labourer</figcaption>
               </span>
             </div>
           </div>
