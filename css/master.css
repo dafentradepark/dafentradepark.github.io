@@ -316,16 +316,16 @@ a.link {
 }
 
 .dual-pane-container .dual-pane-image {
-  margin-top: 80px;
+  margin-top: 60px;
   display: block;
   height: 440px;
   width: 100%;
   background-size: cover !important;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
 }
 
-/* Gallery Previews */
+/* Gallery */
 
 .gallery-container {
   display: block !important;
@@ -338,7 +338,7 @@ a.link {
   display: block !important;
   width: 90%;
   height: 280px;
-  margin-top: 80px;
+  margin-top: 5%;
   background: rgba(0, 0, 0, 0.9);
   background-size: cover !important;
   background-position: center !important;
@@ -372,14 +372,15 @@ a.link {
 }
 
 .gallery-container .controls .count {
-  letter-spacing: 1.0px;
+  letter-spacing: 2px;
   display: block;
   height: 100%;
   color: rgba(255, 255, 255, 1);
   padding-right: 15px;
   padding-top: 10px;
   cursor: e-resize;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
 }
 
 .gallery-container .no-selection {
@@ -407,6 +408,10 @@ a.link {
 
 .margin-top-100 {
   margin-top: 100px;
+}
+
+.margin-bottom-100 {
+  margin-bottom: 100px;
 }
 
 .image-grid-container div {
