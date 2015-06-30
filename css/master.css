@@ -168,6 +168,7 @@ a.link {
     right: 25px;
     font-size: 36px;
     font-weight: 300;
+    cursor: pointer;
   }
 
   .responsive-nav .logo {
