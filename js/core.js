@@ -1,3 +1,45 @@
+
+// Responsive navigation handler
+// The functions below are responsible for the actions
+// related to the actions performed by the navigation bar
+// at certain sizes
+
+var menuButton = document.getElementById('menu-button');
+
+function openMenu() {
+  var navigation = document.getElementById('navigation');
+  navigation.className = 'navigation open';
+}
+
+menuButton.onclick = function() {
+  openMenu();
+}
+
+function closeMenu() {
+  var navigation = document.getElementById('navigation');
+  navigation.className = 'navigation closed';
+}
+
+var closeMenuButton = document.getElementById('close-menu-button');
+closeMenuButton.onclick = function() {
+  closeMenu();
+}
+
+var siteNav = document.getElementsByClassName('list--site-navigation');
+var siteNavElements = siteNav[0].children;
+var navigation = document.getElementById('navigation');
+if (navigation.style.width < 600) {
+  for (var i = 0; i < siteNavElements.length; i++) {
+    siteNavElements[i].onclick = function() {
+      // delays the collapse of the navigation bar slightly
+      setTimeout( function () {
+        closeMenu();
+      }, 300);
+    }
+  }
+}
+
+
 // A function that defines the gallery carousel functions.
 // To invoke the function pass an array of images, the gallery
 // container and the preloader container.
@@ -73,18 +115,18 @@ function carousel(images, gallery, preloader) {
 var beforeIndoorGallery = document.getElementById('before-indoor-gallery');
 var beforeIndoorPreloader = document.getElementById('before-indoor-preloader');
 var beforeIndoorImages = [
-  'images/gallery/indoors/dafen-park-indoors-02.jpg',
-  'images/gallery/indoors/dafen-park-indoors-01.jpg',
-  'images/gallery/indoors/dafen-park-indoors-03.jpg',
-  'images/gallery/indoors/dafen-park-indoors-04.jpg',
   'images/gallery/indoors/dafen-park-indoors-05.jpg',
   'images/gallery/indoors/dafen-park-indoors-06.jpg',
+  'images/gallery/indoors/dafen-park-indoors-02.jpg',
+  'images/gallery/indoors/dafen-park-indoors-03.jpg',
+  'images/gallery/indoors/dafen-park-indoors-04.jpg',
   'images/gallery/indoors/dafen-park-indoors-07.jpg',
   'images/gallery/indoors/dafen-park-indoors-08.jpg',
   'images/gallery/indoors/dafen-park-indoors-09.jpg',
   'images/gallery/indoors/dafen-park-indoors-10.jpg',
   'images/gallery/indoors/dafen-park-indoors-11.jpg',
   'images/gallery/indoors/dafen-park-indoors-13.jpg',
+  'images/gallery/indoors/dafen-park-indoors-01.jpg',
   'images/gallery/indoors/dafen-park-indoors-14.jpg',]
 
 carousel(beforeIndoorImages, beforeIndoorGallery, beforeIndoorPreloader);
