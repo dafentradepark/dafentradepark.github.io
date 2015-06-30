@@ -547,6 +547,9 @@ a.link {
     float: none;
     margin: 0 auto;
   }
+  .gallery-container .image {
+    width: 100%;
+  }
 }
 
 /* Meet the team */
