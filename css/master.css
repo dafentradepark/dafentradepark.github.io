@@ -142,6 +142,7 @@ a.link {
   letter-spacing: 0.6px;
   float: right;
   padding-right: 15px;
+  cursor: pointer;
 }
 
 #close-menu-button {
