@@ -304,10 +304,10 @@ a.link {
 
 @media screen and (max-width:600px) {
   .header-image {
-    height: 460px;
+    height: 360px;
   }
   .header-image .container {
-    padding-top: 340px;
+    padding-top: 240px;
   }
 }
 
