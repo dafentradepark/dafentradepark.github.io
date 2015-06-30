@@ -143,7 +143,6 @@ var beforeOutdoorImages = [
   "images/gallery/outdoors/dafen-park-outdoors-04.jpg",
   "images/gallery/outdoors/dafen-park-outdoors-05.jpg",
   "images/gallery/outdoors/dafen-park-outdoors-06.jpg",
-  "images/gallery/outdoors/dafen-park-outdoors-10.jpg",
   "images/gallery/outdoors/dafen-park-outdoors-12.jpg",
   "images/gallery/outdoors/dafen-park-outdoors-13.jpg",
   "images/gallery/outdoors/dafen-park-outdoors-14.jpg",
