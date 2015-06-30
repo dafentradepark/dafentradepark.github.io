@@ -283,7 +283,7 @@ a.link {
   letter-spacing: 2.0px;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.8);
-  background: rgba(255, 255, 255, 0.96);
+  background: rgba(255, 255, 255, 1);
   padding: 20px;
   cursor: default;
 }
