@@ -19,7 +19,7 @@
   </head>
   <body>
 
-    <nav role="navigation" class="navigation">
+    <nav role="navigation" id='navigation' class="navigation closed">
 
         <div>
           <h1 class="logo"><a data-scroll href="#">Dafen Trade Park</a></h1>
@@ -33,8 +33,18 @@
               <li><a data-scroll href="#contact">Contact</a></li>
             </ul>
         </div>
+        <span id="close-menu-button">&times;</span>
 
     </nav>
+
+    <div id='responsive-nav' class="responsive-nav">
+      <span>
+        <h1 class="logo"><a data-scroll href="#">Dafen Trade Park</a></h1>
+      </span>
+      <span>
+        <a id="menu-button" href="#">Menu</a>
+      </span>
+    </div>
 
     <div class="content">
 
@@ -62,22 +72,22 @@
             </div>
           </div>
           <div class="bullet-container width-100">
-            <span class="width-25">
+            <span>
               <h3>281, 000</h3>
               <h4>People</h4>
               <p>within a 30 minute trade area.</p>
             </span>
-            <span class="width-25">
+            <span>
               <h3>3.4</h3>
               <h4>Miles</h4>
               <p>from junction 48 of the M4.</p>
             </span>
-            <span class="width-25">
+            <span>
               <h3>35, 000</h3>
               <h4>Square Foot</h4>
               <p>of available floor space.</p>
             </span>
-            <span class="width-25">
+            <span>
               <h3>10</h3>
               <h4>Trade Counter</h4>
               <p>units available for lease.</p>
@@ -131,7 +141,7 @@
             </div>
           </div>
 
-          <div class="dual-pane-container">
+          <div class="dual-pane-container margin-bottom-100">
             <div class="width-50">
               <div class="text-container">
                 <h2>The Design</h2>
@@ -190,12 +200,13 @@
             <!-- Indoors Before -->
             <div class="width-50">
               <div class="gallery-container">
-                <div id="before-indoor-gallery" class="image float-right" style="background: url('images/gallery/indoors/dafen-park-indoors-02.jpg')">
+                <div id="before-indoor-gallery" class="image float-right" style="background: url('images/gallery/indoors/dafen-park-indoors-05.jpg')">
                   <div class="controls">
-                    <span data-action="prev-image" class="right width-50 no-selection"></span>
-                    <span data-action="next-image" class="left width-50 no-selection"></span>
+                    <span data-action="prev-image" class="left width-50 no-selection">&lsaquo;</span>
+                    <span data-action="next-image" class="right width-50 no-selection">&rsaquo;</span>
                     <span data-display="image-count" class="count no-selection">1</span>
                   </div>
+                  <span class="gallery-title">Indoors Before</span>
                 </div>
                 <div id="before-indoor-preloader" class="image float-right hidden"></div>
               </div>
@@ -206,10 +217,11 @@
               <div class="gallery-container">
                 <div id="before-outdoor-gallery" class="image float-left" style="background: url('images/gallery/outdoors/dafen-park-outdoors-11.jpg')">
                   <div class="controls">
-                    <span data-action="prev-image" class="right width-50 no-selection"></span>
-                    <span data-action="next-image" class="left width-50 no-selection"></span>
+                    <span data-action="prev-image" class="left width-50 no-selection">&lsaquo;</span>
+                    <span data-action="next-image" class="right width-50 no-selection">&rsaquo;</span>
                     <span data-display="image-count" class="count no-selection">1</span>
                   </div>
+                  <span class="gallery-title">Outdoors Before</span>
                 </div>
                 <div id="before-outdoor-preloader" class="image float-right hidden"></div>
               </div>
@@ -225,10 +237,11 @@
               <div class="gallery-container">
                 <div id="after-indoor-gallery" class="image float-right" style="background: url('images/gallery/dafen-park-indoors-14.jpg')">
                   <div class="controls">
-                    <span data-action="prev-image" class="right width-50 no-selection"></span>
-                    <span data-action="next-image" class="left width-50 no-selection"></span>
+                    <span data-action="prev-image" class="left width-50 no-selection">&lsaquo;</span>
+                    <span data-action="next-image" class="right width-50 no-selection">&rsaquo;</span>
                     <span data-display="image-count" class="count no-selection">1</span>
                   </div>
+                  <span class="gallery-title">Indoors After</span>
                 </div>
                 <div id="after-indoor-preloader" class="image float-right hidden"></div>
               </div>
@@ -240,10 +253,11 @@
               <div class="gallery-container">
                 <div id="after-outdoor-gallery" class="image float-left" style="background: url('images/gallery/outdoors/dafen-park-outdoors-11.jpg')">
                   <div class="controls">
-                    <span data-action="prev-image" class="right width-50 no-selection"></span>
-                    <span data-action="next-image" class="left width-50 no-selection"></span>
+                    <span data-action="prev-image" class="left width-50 no-selection">&lsaquo;</span>
+                    <span data-action="next-image" class="right width-50 no-selection">&rsaquo;</span>
                     <span data-display="image-count" class="count no-selection">1</span>
                   </div>
+                  <span class="gallery-title">Outdoors After</span>
                 </div>
                 <div id="after-outdoor-preloader" class="image float-right hidden"></div>
               </div>
@@ -268,28 +282,28 @@
           </div>
 
           <div class="image-grid-container width-100 margin-top-100">
-            <div class="width-25">
+            <div>
               <a class="image" style="background: url('images/team/rob.jpg')"></a>
               <span>
                 <h3>Robert Rees</h3>
                 <figcaption>Site Director</figcaption>
               </span>
             </div>
-            <div class="width-25">
+            <div>
               <a class="image" style="background: url('images/team/morton.jpg')"></a>
               <span>
                 <h3>Morton Rees</h3>
                 <figcaption>Site Manager</figcaption>
               </span>
             </div>
-            <div class="width-25">
+            <div>
               <a class="image" style="background: url('images/team/phil.jpg')"></a>
               <span>
                 <h3>Phil Beynon</h3>
                 <figcaption>Contractor</figcaption>
               </span>
             </div>
-            <div class="width-25">
+            <div>
               <a class="image" style="background: url('images/team/josh.jpg')"></a>
               <span>
                 <h3>Joshua Thomas</h3>
@@ -299,28 +313,28 @@
           </div>
 
           <div class="image-grid-container width-100">
-            <div class="width-25">
+            <div>
               <a class="image" style="background: url('images/team/dafs.jpg')"></a>
               <span>
                 <h3>Dafydd Lewis</h3>
                 <figcaption>Carpentry</figcaption>
               </span>
             </div>
-            <div class="width-25">
+            <div>
               <a class="image" style="background: url('images/team/marek.jpg')"></a>
               <span>
                 <h3>Marek Ciecwierski</h3>
                 <figcaption>Carpentry</figcaption>
               </span>
             </div>
-            <div class="width-25">
+            <div>
               <a class="image" style="background: url('images/team/kev.jpg')"></a>
               <span>
                 <h3>Kevin Pearce</h3>
                 <figcaption>Electricals</figcaption>
               </span>
             </div>
-            <div class="width-25">
+            <div>
               <a class="image" style="background: url('images/team/paul.jpg')"></a>
               <span>
                 <h3>Paul Davies</h3>
@@ -330,28 +344,28 @@
           </div>
 
           <div class="image-grid-container width-100">
-            <div class="width-25">
+            <div>
               <a class="image" style="background: url('images/team/jeff.jpg')"></a>
               <span>
                 <h3>Jeffrey Evans</h3>
                 <figcaption>Painting</figcaption>
               </span>
             </div>
-            <div class="width-25">
+            <div>
               <a class="image" style="background: url('images/team/myles.jpg')"></a>
               <span>
                 <h3>Myles Thomas</h3>
                 <figcaption>Groundworks</figcaption>
               </span>
             </div>
-            <div class="width-25">
+            <div>
               <a class="image" style="background: url('images/team/calvin.jpg')"></a>
               <span>
                 <h3>Calvin Jenkins</h3>
                 <figcaption>Groundworks</figcaption>
               </span>
             </div>
-            <div class="width-25">
+            <div>
               <a class="image" style="background: url('images/team/jakub.jpg')"></a>
               <span>
                 <h3>Jakub Wroblewicz</h3>
@@ -363,7 +377,7 @@
         </section>
 
         <!-- Contact Section -->
-        <section class="width-100">
+        <section class="width-100 margin-top-100">
 
           <div class="dual-pane-container">
             <div class="width-50">
@@ -424,19 +438,19 @@
         <!-- Footer Section -->
         <footer class="site-footer">
           <div class="bullet-container width-100">
-            <span class="width-20">
+            <span style="border:none;">
               <h4><a data-scroll class="link" href="#about">About</a></h4>
             </span>
-            <span class="width-20">
+            <span>
               <h4><a data-scroll class="link" href="#story">Story</a></h4>
             </span>
-            <span class="width-20">
+            <span>
               <h4><a data-scroll class="link" href="#gallery">Gallery</a></h4>
             </span>
-            <span class="width-20">
+            <span>
               <h4><a data-scroll class="link" href="#team">Team</a></h4>
             </span>
-            <span class="width-20">
+            <span>
               <h4><a data-scroll class="link" href="#contact">Contact</a></h4>
             </span>
           </div>
