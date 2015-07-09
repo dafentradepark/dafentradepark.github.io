@@ -444,6 +444,90 @@ a.link {
   }
 }
 
+/* Availability */
+
+#availability {
+  background: rgba(0, 0, 0, 0.9);
+  padding-top: 80px;
+  padding-bottom: 120px;
+  color:rgba(255, 255, 255, 0.9);
+}
+
+#availability .text-container {
+  color:rgba(255, 255, 255, 0.9);
+  padding: 0;
+}
+
+#availability .availability-image {
+  width: 100%;
+  height: 500px;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  display:inline-block;
+}
+
+#availability ul {
+  margin: 0 20px;
+  padding: 0;
+  padding: 40px;
+  list-style: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  letter-spacing: 1.4px;
+  line-height: 24px;
+  text-align: center;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+}
+
+#availability li {
+  padding: 20px;
+  display: inline-block;
+  margin-bottom: 10px;
+  cursor: default;
+}
+
+#availability h1 {
+  text-align: center;
+  letter-spacing: 3px;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  font-size: 18px;
+}
+
+#availability h4 {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+#availability span {
+  display: block;
+  font-size: 12px;
+}
+
+#availability span.status {
+  border: 1px solid;
+  padding: 3px;
+  font-size: 11px;
+  text-align: center;
+  margin-top: 14px;
+  letter-spacing: 0.8px;
+  text-transform: capitalize;
+}
+
+#availability span.available {
+  color: rgba(46, 204, 113, 0.9);
+}
+
+#availability span.unavailable {
+  color: rgba(231, 76, 60, 0.9);
+}
+
+
 /* Gallery */
 
 .gallery-container {
@@ -645,6 +729,11 @@ a.link {
   color: rgba(255, 255, 255, 1);
 }
 
+.site-footer .bullet-container span {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
 .site-footer span {
   border: none;
   text-align: center;
@@ -652,6 +741,7 @@ a.link {
 
 .site-footer a {
   color: rgba(255, 255, 255, 1);
+  font-size: 16px;
 }
 
 .footer-text {
