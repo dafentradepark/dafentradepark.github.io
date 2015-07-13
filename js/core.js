@@ -115,19 +115,24 @@ function carousel(images, gallery, preloader) {
 var beforeIndoorGallery = document.getElementById('before-indoor-gallery');
 var beforeIndoorPreloader = document.getElementById('before-indoor-preloader');
 var beforeIndoorImages = [
-  'images/gallery/indoors/dafen-park-indoors-05.jpg',
-  'images/gallery/indoors/dafen-park-indoors-06.jpg',
-  'images/gallery/indoors/dafen-park-indoors-02.jpg',
-  'images/gallery/indoors/dafen-park-indoors-03.jpg',
-  'images/gallery/indoors/dafen-park-indoors-04.jpg',
-  'images/gallery/indoors/dafen-park-indoors-07.jpg',
-  'images/gallery/indoors/dafen-park-indoors-08.jpg',
-  'images/gallery/indoors/dafen-park-indoors-09.jpg',
-  'images/gallery/indoors/dafen-park-indoors-10.jpg',
-  'images/gallery/indoors/dafen-park-indoors-11.jpg',
-  'images/gallery/indoors/dafen-park-indoors-13.jpg',
-  'images/gallery/indoors/dafen-park-indoors-01.jpg',
-  'images/gallery/indoors/dafen-park-indoors-14.jpg',]
+  'images/gallery/indoors/01.jpeg',
+  'images/gallery/indoors/02.jpeg',
+  'images/gallery/indoors/03.jpeg',
+  'images/gallery/indoors/04.jpeg',
+  'images/gallery/indoors/05.jpeg',
+  'images/gallery/indoors/06.jpeg',
+  'images/gallery/indoors/07.jpeg',
+  'images/gallery/indoors/08.jpeg',
+  'images/gallery/indoors/09.jpeg',
+  'images/gallery/indoors/10.jpeg',
+  'images/gallery/indoors/11.jpeg',
+  'images/gallery/indoors/12.jpeg',
+  'images/gallery/indoors/13.jpeg',
+  'images/gallery/indoors/14.jpeg',
+  'images/gallery/indoors/15.jpeg',
+  'images/gallery/indoors/16.jpeg',
+  'images/gallery/indoors/17.jpeg',
+  'images/gallery/indoors/18.jpeg']
 
 carousel(beforeIndoorImages, beforeIndoorGallery, beforeIndoorPreloader);
 
