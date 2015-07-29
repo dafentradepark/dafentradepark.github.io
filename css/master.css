@@ -297,7 +297,8 @@ a.link {
   letter-spacing: 2.0px;
   font-weight: 400;
   color: rgba(255, 255, 255, 1);
-  background: rgba(0, 0, 0, 0.96);
+  background: blue;
+  opacity: 0.9;
   padding: 20px;
   margin-left: 5px;
   margin-right: 5px;
@@ -309,7 +310,19 @@ a.link {
     height: 360px;
   }
   .header-image .container {
-    padding-top: 240px;
+    max-width: 240px;
+    padding-top: 150px;
+    line-height: 1.6;
+    opacity: 0.95;
+  }
+  .header-image h1 {
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: rgb(0, 0, 0);
+  }
+  .button--start-yours {
+    margin-top: 90px;
+    font-size: 10px;
   }
 }
 
